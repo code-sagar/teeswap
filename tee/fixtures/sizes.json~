@@ -1,0 +1,44 @@
+[
+  {
+    "model": "tee.Size",
+    "pk": 1,
+    "fields": {
+      "size": "XS"
+    }
+  },
+{
+    "model": "tee.Size",
+    "pk": 1,
+    "fields": {
+      "size": "S"
+    }
+  },
+  {
+    "model": "tee.Size",
+    "pk": 1,
+    "fields": {
+      "size": "M"
+    }
+  },
+  {
+    "model": "tee.Size",
+    "pk": 1,
+    "fields": {
+      "size": "L"
+    }
+  },
+  {
+    "model": "tee.Size",
+    "pk": 1,
+    "fields": {
+      "size": "XL"
+    }
+  },
+  {
+    "model": "tee.Size",
+    "pk": 1,
+    "fields": {
+      "size": "XXL"
+    }
+  }
+]
