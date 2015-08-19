@@ -42,6 +42,7 @@ def teelist2(request):
             havecolor = form.cleaned_data['havecolor']
             tee = Tee.objects.create(qid=qid, havesize=havesize, wantsize=wantsize, havecolor=havecolor)
             matches = Tee.objects.filter(havesize=wantsize, wantsize=havesize)
+            form = teeForm2(initial={'qid': qid})
     else:
         raise PermissionError
 
