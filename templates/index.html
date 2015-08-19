@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="col-xs-12 col-md-9 col-sm-9">
+    <form action='{% url 'tee:teelist' %}' method='post'>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type='submit' value='Submit' />
+</form>
+  </div>
+{% endblock content %}

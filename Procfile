@@ -1,0 +1,1 @@
+web: gunicorn teeswap.wsgi --log-file -

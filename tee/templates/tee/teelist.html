@@ -1,0 +1,14 @@
+<p>Qid: {{qid}}</p>
+{% if exists %}
+<p> Matches:</p>
+    {% for match in matches %}
+    <p>{{match.qid}}: {{match.havecolor}} {% if match.traded %} (Trade no more available) {% endif %}</p>
+    {% endfor %}
+<form action='{% url 'tee:teelistTraded' %}' method='post'>
+{% else %}
+<form action='{% url 'tee:teelist2' %}' method='post'>
+{% endif %}
+    {% csrf_token %}
+    {{ form.as_p }}
+<input type='submit' value='Submit' />
+</form>
